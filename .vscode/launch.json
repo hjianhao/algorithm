@@ -8,7 +8,7 @@
             "name": "(gdb)Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/algorithm",
+            "program": "${command:cmake.launchTargetPath}",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -22,7 +22,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Ubuntu C++",
+            "preLaunchTask": "cmake build",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
